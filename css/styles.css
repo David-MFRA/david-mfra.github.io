@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat';
+    font-size: 62.5%
 }
 
 #title {
@@ -8,17 +9,18 @@ body {
 
 .titulo {
     font-family: 'Montserrat-Black', sans-serif;
-    font-size: 6rem;
+    font-size: 6em;
     font-weight: 900;
     line-height: 1;
     color: white;
+    width: 100%;
 }
 
 h2 {
     font-family: 'Montserrat-Black', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3em;
     font-weight: 400;
-    color: white;
+    color: rgb(199, 199, 199);
 }
 
 h3{
@@ -31,7 +33,7 @@ p {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 10%;
 }
 
 
@@ -45,7 +47,7 @@ p {
 }
 
 .navbar {
-    padding-bottom: 4.5rem;
+    padding-bottom: 5em;
 }
 
 .nav-item {
@@ -65,13 +67,17 @@ p {
 }
 
 .title-image {
-    width: 60%;
+    width: 45%;
+    object-fit: contain;
     border-radius: 100%;
 }
+
 
 /* Features section */
 #features {
     padding: 5% 15%;
+    position: relative;
+    background-color: white;
 }
 
 .feature-box {
@@ -119,4 +125,28 @@ em {
 
 .carousel-item {
     padding: 7% 15%;
+}
+
+@media (min-width: 900px) {
+    .titulo {
+        font-family: 'Montserrat-Black', sans-serif;
+        font-size: 8em;
+        font-weight: 900;
+        line-height: 1;
+        color: white;
+        width: 100%;
+    }
+
+    .navbar {
+        padding-bottom: 7em;
+    }    
+}
+
+@media (max-width: 1000px) {
+    .title-image {
+        width: 60%;
+        border-radius: 100%;
+        position: static;
+        text-align: center;
+    }
 }
